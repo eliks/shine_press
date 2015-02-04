@@ -33,6 +33,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!-- //grid-slider -->
 </head>
 <body>
+	@if(Session::has('info'))
+    	<div style="background-color: green; color: white;text-align: center; text-decoration: blink;">{{ Session::get('info') }}</div>
+    @elseif(Session::has('congrat'))
+    	<div style="background-color: green; color: white;text-align: center;">{{ Session::get('congrat') }}</div>
+    @endif
  <!-- start header_top -->
  <!-- <div id="myCarousel" class="carousel slide"> -->
  	<!-- Carousel items -->
@@ -595,18 +600,20 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					<h3> Have a printing need?</h3>
 					<p class="m_9">Describe your printing need and we will give you a quote, in a moment.</p>
 					<div class="row">
-						<form action="" method="post">
+						{{ Form::open(array('url' => 'submit_message_r')) }}
+						<!-- <form action="" method="post"> -->
 							<div class="col-md-6">
-								<input type="text" class="form-control" placeholder="Your phone number" style="margin-bottom: 3px;" />
-								<input type="text" class="form-control" placeholder="Your email address" style="margin-bottom: 3px;" />
+								{{ Form::text('name',Input::old('name'),array('class'=>'form-control','placeholder'=>'Your name','style'=>'margin-bottom: 5px;')) }}
+								{{ Form::text('phone_number',Input::old('phone_number'),array('class'=>'form-control','placeholder'=>'Your phone number','style'=>'margin-bottom: 5px;')) }}
+								{{ Form::text('email',Input::old('email'),array('class'=>'form-control','placeholder'=>'Your email address','style'=>'margin-bottom: 3px;')) }}
 							</div>
 							<div class="col-md-6">
-								<textarea class="form-control" rows="3" placeholder="Describe your printing need" style="margin-bottom: 3px;"></textarea>
+								{{ Form::textarea('message',Input::old('message'),array('class'=>'form-control','placeholder'=>'Describe your printing need','style'=>'margin-bottom: 3px;','rows'=>'5')) }}
 							</div>
 							<div class="col-md-12">
 								<input type="submit" class="form-control btn-primary" value="Request Quote" />
 							</div>
-						</form>
+						{{ Form::close() }}
 					</div>
 				</div>
 				<div class="clear"></div>
@@ -642,26 +649,28 @@ License URL: http://creativecommons.org/licenses/by/3.0/
         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
         <h4 class="modal-title" id="myModalLabel">Contact us <small>We'd love to hear from you.</small></h4>
       </div>
-      <div class="modal-body" style="padding-bottom: 0px;">
-        <div class="row">
-        	<div class="form-group col-lg-6">
-                <label for="input1">Name</label>
-                <input type="text" name="contact_name" class="form-control" id="input1" style="margin-bottom: 12px;">
-                <label for="input2">Phone</label>
-                <input type="text" name="contact_name" class="form-control" id="input2" style="margin-bottom: 12px;">
-                <label for="input3">Email</label>
-                <input type="text" name="contact_name" class="form-control" id="input3">
-            </div>
-            <div class="form-group col-lg-6">
-                <label for="input4">Message</label>
-                <textarea name="contact_message" class="form-control" rows="8" id="input4"></textarea>
-            </div>
-        </div>
-      </div>
-      <div class="modal-footer">
-      	<button type="button" class="btn btn-primary">Send Message</button>
-        <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
-      </div>
+      {{ Form::open(array('url' => 'submit_message_r')) }}
+	      <div class="modal-body" style="padding-bottom: 0px;">
+	        <div class="row">
+	        	<div class="form-group col-lg-6">
+	                <label for="input1">Name</label>
+	                {{ Form::text('name',Input::old('name'),array('class'=>'form-control','placeholder'=>'Your name','style'=>'margin-bottom: 10px;')) }}
+	                <label for="input2">Phone</label>
+	                {{ Form::text('phone_number',Input::old('phone_number'),array('class'=>'form-control','placeholder'=>'Your phone number','style'=>'margin-bottom: 10px;')) }}
+	                <label for="input3">Email</label>
+					{{ Form::text('email',Input::old('email'),array('class'=>'form-control','placeholder'=>'Your email address','style'=>'')) }}
+	            </div>
+	            <div class="form-group col-lg-6">
+	                <label for="input4">Message</label>
+	                {{ Form::textarea('message',Input::old('message'),array('class'=>'form-control','placeholder'=>'Describe your printing need','style'=>'','rows'=>'8')) }}
+	            </div>
+	        </div>
+	      </div>
+	      <div class="modal-footer">
+	      	<input type="submit" class="btn btn-primary" value="Request Quote" />
+	        <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+	      </div>
+      {{ Form::close() }}
     </div>
   </div>
 </div>

@@ -16,6 +16,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 <script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.js"></script>
 <!-- grid-slider -->
 <script type="text/javascript" src="js/jquery.mousewheel.js"></script>
 <script type="text/javascript" src="js/jquery.contentcarousel.js"></script>
@@ -25,6 +26,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!---//calender-style---->	
 </head>
 <body>
+	@if(Session::has('info'))
+    	<div style="background-color: green; color: white;text-align: center; text-decoration: blink;">{{ Session::get('info') }}</div>
+    @elseif(Session::has('congrat'))
+    	<div style="background-color: green; color: white;text-align: center;">{{ Session::get('congrat') }}</div>
+    @endif
     <!-- start header_bottom -->
     <div class="header-bottom">
 		 <div class="container">
@@ -100,7 +106,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						  	 <h4>we deliver with quality and on time</h4>
 						  	 <p>With our ultra-modern equipements, our skilled personel <br> work round the clock to deliver the best quality on time. </p>	
 						  	 <div class="btn3">
-						       <a href="#semifooter" class="scroll">Request a quote</a>
+						       <a href="#" class="" data-toggle="modal" data-target="#myModal">Request a quote</a>
 					         </div>	
 						  </div>
 					</div>
@@ -163,18 +169,20 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					<h3> Have a printing need?</h3>
 					<p class="m_9">Describe your printing need and we will give you a quote, in a moment.</p>
 					<div class="row">
-						<form action="" method="post">
+						{{ Form::open(array('url' => 'submit_message_r')) }}
+						<!-- <form action="" method="post"> -->
 							<div class="col-md-6">
-								<input type="text" class="form-control" placeholder="Your phone number" style="margin-bottom: 3px;" />
-								<input type="text" class="form-control" placeholder="Your email address" style="margin-bottom: 3px;" />
+								{{ Form::text('name',Input::old('name'),array('class'=>'form-control','placeholder'=>'Your name','style'=>'margin-bottom: 5px;')) }}
+								{{ Form::text('phone_number',Input::old('phone_number'),array('class'=>'form-control','placeholder'=>'Your phone number','style'=>'margin-bottom: 5px;')) }}
+								{{ Form::text('email',Input::old('email'),array('class'=>'form-control','placeholder'=>'Your email address','style'=>'margin-bottom: 3px;')) }}
 							</div>
 							<div class="col-md-6">
-								<textarea class="form-control" rows="3" placeholder="Describe your printing need" style="margin-bottom: 3px;"></textarea>
+								{{ Form::textarea('message',Input::old('message'),array('class'=>'form-control','placeholder'=>'Describe your printing need','style'=>'margin-bottom: 3px;','rows'=>'5')) }}
 							</div>
 							<div class="col-md-12">
 								<input type="submit" class="form-control btn-primary" value="Request Quote" />
 							</div>
-						</form>
+						{{ Form::close() }}
 					</div>
 				</div>
 				<div class="clear"></div>
@@ -201,5 +209,40 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		  </div>
 	     </div>
 <!-- /repeat -->
+
+<!-- modal  -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h4 class="modal-title" id="myModalLabel">Contact us <small>We'd love to hear from you.</small></h4>
+      </div>
+      {{ Form::open(array('url' => 'submit_message_r')) }}
+	      <div class="modal-body" style="padding-bottom: 0px;">
+	        <div class="row">
+	        	<div class="form-group col-lg-6">
+	                <label for="input1">Name</label>
+	                {{ Form::text('name',Input::old('name'),array('class'=>'form-control','placeholder'=>'Your name','style'=>'margin-bottom: 10px;')) }}
+	                <label for="input2">Phone</label>
+	                {{ Form::text('phone_number',Input::old('phone_number'),array('class'=>'form-control','placeholder'=>'Your phone number','style'=>'margin-bottom: 10px;')) }}
+	                <label for="input3">Email</label>
+					{{ Form::text('email',Input::old('email'),array('class'=>'form-control','placeholder'=>'Your email address','style'=>'')) }}
+	            </div>
+	            <div class="form-group col-lg-6">
+	                <label for="input4">Message</label>
+	                {{ Form::textarea('message',Input::old('message'),array('class'=>'form-control','placeholder'=>'Describe your printing need','style'=>'','rows'=>'8')) }}
+	            </div>
+	        </div>
+	      </div>
+	      <div class="modal-footer">
+	      	<input type="submit" class="btn btn-primary" value="Request Quote" />
+	        <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+	      </div>
+      {{ Form::close() }}
+    </div>
+  </div>
+</div>
+<!-- /modal -->
 </body>
 </html>

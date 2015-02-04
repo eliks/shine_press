@@ -78,6 +78,8 @@ Route::get('contact.php', function()
 
 Route::post('submit_message_c', array('uses' => 'AdController@submit_message_c'));
 
+Route::post('submit_message_r', array('uses' => 'AdController@submit_message_r'));
+
 Route::get('logout', array('uses' => 'AdController@logout'));
 
 Route::post('submit_message', array('uses' => 'AdController@submit_message'));
