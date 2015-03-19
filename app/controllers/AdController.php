@@ -40,7 +40,7 @@ class AdController extends \BaseController {
 			}
 			
 			$MS->name = $nm;
-			$MS->phone_number = $ph;
+			$MS->telephone = $ph;
 			$MS->email = $em;
 			$MS->content = $ms;
 			
@@ -99,7 +99,7 @@ public function submit_message_r(){
 			}
 			
 			$MS->name = $nm;
-			$MS->phone_number = $ph;
+			$MS->telephone = $ph;
 			$MS->email = $em;
 			$MS->content = $ms;
 			

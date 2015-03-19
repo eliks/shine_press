@@ -138,7 +138,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	 	    			<div class="clear"></div>	
 	 	    		</ul>
 					 <div class="view view-fifth">
-				  	   <img src="images/pic3.jpg" class="img-responsive" alt=""/>
+				  	   <img src="images/services/prepress2.jpg" class="img-responsive" alt=""/>
 					      <div class="mask">
 	                       	<div class="info">Read More</div>
 			              </div>
@@ -151,7 +151,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	 	    			<div class="clear"></div>	
 	 	    		</ul>
 					 <div class="view view-fifth">
-				  	   <img src="images/pic3.jpg" class="img-responsive"  alt=""/>
+				  	   <img src="images/services/graphic_design2.jpg" class="img-responsive"  alt=""/>
 					      <div class="mask">
 	                       	<div class="info">Read More</div>
 			              </div>
@@ -164,7 +164,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	 	    			<div class="clear"></div>	
 	 	    		</ul>
 					 <div class="view view-fifth">
-				  	   <img src="images/pic3.jpg" class="img-responsive" alt=""/>
+				  	   <img src="images/services/book_binding2.jpg" class="img-responsive" alt=""/>
 					      <div class="mask">
 	                       	<div class="info">Read More</div>
 			              </div>
@@ -445,49 +445,49 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				         <div class="ca-item ca-item-1">
 						   <div class="ca-item-main">
 								<div class="ca-icon1"> </div>
-								<div class="ca-icon1"> </div>
+								<div class="ca-icon2"> </div>
 							</div>
 						  </div>
 						<div class="ca-item ca-item-2">
 							<div class="ca-item-main">
-								<div class="ca-icon1"> </div>
-								<div class="ca-icon1"> </div>
+								<div class="ca-icon3"> </div>
+								<div class="ca-icon8"> </div>
 							</div>
 						</div>
 						<div class="ca-item ca-item-3">
 							<div class="ca-item-main">
-								<div class="ca-icon1"> </div>
-								<div class="ca-icon1"> </div>
+								<div class="ca-icon5"> </div>
+								<div class="ca-icon6"> </div>
 							</div>
 						</div>
 						<div class="ca-item ca-item-4">
 							<div class="ca-item-main">
-								<div class="ca-icon1"> </div>
-								<div class="ca-icon1"> </div>
+								<div class="ca-icon7"> </div>
+								<div class="ca-icon4"> </div>
 						     </div>
 						</div>
 						<div class="ca-item ca-item-5">
 							<div class="ca-item-main">
-								<div class="ca-icon1"> </div>
-								<div class="ca-icon1"> </div>
+								<div class="ca-icon9"> </div>
+								<div class="ca-icon10"> </div>
 							</div>
 						</div>
 						<div class="ca-item ca-item-6">
 							<div class="ca-item-main">
-								<div class="ca-icon1"> </div>
-								<div class="ca-icon1"> </div>
+								<div class="ca-icon11"> </div>
+								<div class="ca-icon12"> </div>
 							</div>
 						</div>
 						<div class="ca-item ca-item-7">
 							<div class="ca-item-main">
-								<div class="ca-icon1"> </div>
-								<div class="ca-icon1"> </div>
+								<div class="ca-icon13"> </div>
+								<div class="ca-icon14"> </div>
 							</div>
 						</div>
 						<div class="ca-item ca-item-8">
 							<div class="ca-item-main">
-								<div class="ca-icon1"> </div>
-								<div class="ca-icon1"> </div>
+								<div class="ca-icon15"> </div>
+								<div class="ca-icon16"> </div>
 							</div>
 						</div>
 			    </div>

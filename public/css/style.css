@@ -1041,7 +1041,7 @@ span.m_date{
 	display: block;
 	position: relative;
 	margin: 0 auto;
-	background: transparent url(../images/pic11.jpg) no-repeat center center;
+	background: transparent url(../images/ca-icon/ca_icon1.png) no-repeat center center;
 	margin-bottom: 5px;
 }
 .ca-icon2{
@@ -1050,7 +1050,7 @@ span.m_date{
 	display: block;
 	position: relative;
 	margin: 0 auto;
-	background: transparent url(../images/pic10.jpg) no-repeat center center;
+	background: transparent url(../images/ca-icon/ca_icon2.png) no-repeat center center;
 	margin-bottom: 5px;
 }
 .ca-icon3{
@@ -1059,7 +1059,7 @@ span.m_date{
 	display: block;
 	position: relative;
 	margin: 0 auto;
-	background: transparent url(../images/pic14.jpg) no-repeat center center;
+	background: transparent url(../images/ca-icon/ca_icon3.png) no-repeat center center;
 	margin-bottom: 5px;
 }
 .ca-icon4{
@@ -1068,7 +1068,7 @@ span.m_date{
 	display: block;
 	position: relative;
 	margin: 0 auto;
-	background: transparent url(../images/pic15.jpg) no-repeat center center;
+	background: transparent url(../images/ca-icon/ca_icon4.png) no-repeat center center;
 	margin-bottom: 5px;
 }
 .ca-icon5{
@@ -1077,7 +1077,7 @@ span.m_date{
 	display: block;
 	position: relative;
 	margin: 0 auto;
-	background: transparent url(../images/pic16.jpg) no-repeat center center;
+	background: transparent url(../images/ca-icon/ca_icon5.png) no-repeat center center;
 	margin-bottom: 5px;
 }
 .ca-icon6{
@@ -1086,7 +1086,7 @@ span.m_date{
 	display: block;
 	position: relative;
 	margin: 0 auto;
-	background: transparent url(../images/pic17.jpg) no-repeat center center;
+	background: transparent url(../images/ca-icon/ca_icon6.png) no-repeat center center;
 	margin-bottom: 5px;
 }
 .ca-icon7{
@@ -1095,10 +1095,100 @@ span.m_date{
 	display: block;
 	position: relative;
 	margin: 0 auto;
-	background: transparent url(../images/pic17.jpg) no-repeat center center;
+	background: transparent url(../images/ca-icon/ca_icon7.png) no-repeat center center;
 	margin-bottom: 5px;
 }
-.ca-item-2 .ca-icon{
+
+.ca-icon8{
+	width:100%;
+	height: 200px;
+	display: block;
+	position: relative;
+	margin: 0 auto;
+	background: transparent url(../images/ca-icon/ca_icon8.png) no-repeat center center;
+	margin-bottom: 5px;
+}
+
+.ca-icon9{
+	width:100%;
+	height: 200px;
+	display: block;
+	position: relative;
+	margin: 0 auto;
+	background: transparent url(../images/ca-icon/ca_icon9.png) no-repeat center center;
+	margin-bottom: 5px;
+}
+
+.ca-icon10{
+	width:100%;
+	height: 200px;
+	display: block;
+	position: relative;
+	margin: 0 auto;
+	background: transparent url(../images/ca-icon/ca_icon10.png) no-repeat center center;
+	margin-bottom: 5px;
+}
+
+.ca-icon11{
+	width:100%;
+	height: 200px;
+	display: block;
+	position: relative;
+	margin: 0 auto;
+	background: transparent url(../images/ca-icon/ca_icon11.png) no-repeat center center;
+	margin-bottom: 5px;
+}
+
+.ca-icon12{
+	width:100%;
+	height: 200px;
+	display: block;
+	position: relative;
+	margin: 0 auto;
+	background: transparent url(../images/ca-icon/ca_icon12.png) no-repeat center center;
+	margin-bottom: 5px;
+}
+
+.ca-icon13{
+	width:100%;
+	height: 200px;
+	display: block;
+	position: relative;
+	margin: 0 auto;
+	background: transparent url(../images/ca-icon/ca_icon13.png) no-repeat center center;
+	margin-bottom: 5px;
+}
+
+.ca-icon14{
+	width:100%;
+	height: 200px;
+	display: block;
+	position: relative;
+	margin: 0 auto;
+	background: transparent url(../images/ca-icon/ca_icon14.png) no-repeat center center;
+	margin-bottom: 5px;
+}
+
+.ca-icon15{
+	width:100%;
+	height: 200px;
+	display: block;
+	position: relative;
+	margin: 0 auto;
+	background: transparent url(../images/ca-icon/ca_icon15.png) no-repeat center center;
+	margin-bottom: 5px;
+}
+
+.ca-icon16{
+	width:100%;
+	height: 200px;
+	display: block;
+	position: relative;
+	margin: 0 auto;
+	background: transparent url(../images/ca-icon/ca_icon16.png) no-repeat center center;
+	margin-bottom: 5px;
+}
+/*.ca-item-2 .ca-icon{
 	background-image:url(../images/pic10.jpg);
 }
 .ca-item-2 .ca-icon1{
@@ -1127,7 +1217,7 @@ span.m_date{
 }
 .ca-item-4 .ca-icon{
 	background-image:url(../images/pic9.jpg);
-}
+}*/
 .ca-content-wrapper{
 	background:ghostwhite;
 	position:absolute;
